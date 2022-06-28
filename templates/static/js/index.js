@@ -1,5 +1,5 @@
-var canvasWidth = 600;
-        var canvasHeight = 400;
+var canvasWidth = 1700;
+        var canvasHeight = 720;
         //Creación de la variable 
         var player;
         var playerYPosition = 200;
@@ -43,13 +43,13 @@ function createPlayer(width, height, x) {
     
     this.draw = function() {
         ctx = gameCanvas.context;
-        ctx.fillStyle = "green";
+        ctx.fillStyle = "black";
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
     this.makeFall = function() {
         if (!isJumping) {
             this.y += fallSpeed;
-            fallSpeed += 0.1;
+            fallSpeed += 0.5;
             this.stopPlayer();
         }
     }
@@ -62,7 +62,7 @@ function createPlayer(width, height, x) {
     this.jump = function() {
         if (isJumping) {
             this.y -= jumpSpeed;
-            jumpSpeed += 0.3;
+            jumpSpeed += 0.20;
         }
     }
 }
@@ -77,7 +77,7 @@ function createBlock() {
     
     this.draw = function() {
         ctx = gameCanvas.context;
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "blue";
         ctx.fillRect(this.x, this.y, width, height);
     }
     this.attackPlayer = function() {
