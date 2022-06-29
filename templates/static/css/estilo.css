@@ -8,3 +8,9 @@ body {
 
     background-image: url(https://cloudfront-us-east-1.images.arcpublishing.com/gruporepublica/PGYT33UV4JEP5ML2MYDOBSS5OY.jpg);
 }
+
+h1{
+
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(238, 241, 244);
+}

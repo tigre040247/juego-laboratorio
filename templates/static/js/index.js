@@ -46,6 +46,8 @@ function createPlayer(width, height, x) {
         ctx.fillStyle = "black";
         ctx.fillRect(this.x, this.y, this.width, this.height);
     }
+
+    //permiten realizar procesamiento de texto 
     this.makeFall = function() {
         if (!isJumping) {
             this.y += fallSpeed;
